@@ -1,0 +1,9 @@
+C:\Users\Matheus\Desktop\TCC Eng. Software\C#\NUnit\calculos\bin\Debug\netstandard2.0\calculos.deps.json
+C:\Users\Matheus\Desktop\TCC Eng. Software\C#\NUnit\calculos\bin\Debug\netstandard2.0\calculos.dll
+C:\Users\Matheus\Desktop\TCC Eng. Software\C#\NUnit\calculos\bin\Debug\netstandard2.0\calculos.pdb
+C:\Users\Matheus\Desktop\TCC Eng. Software\C#\NUnit\calculos\obj\Debug\netstandard2.0\calculos.csprojAssemblyReference.cache
+C:\Users\Matheus\Desktop\TCC Eng. Software\C#\NUnit\calculos\obj\Debug\netstandard2.0\calculos.AssemblyInfoInputs.cache
+C:\Users\Matheus\Desktop\TCC Eng. Software\C#\NUnit\calculos\obj\Debug\netstandard2.0\calculos.AssemblyInfo.cs
+C:\Users\Matheus\Desktop\TCC Eng. Software\C#\NUnit\calculos\obj\Debug\netstandard2.0\calculos.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Desktop\TCC Eng. Software\C#\NUnit\calculos\obj\Debug\netstandard2.0\calculos.dll
+C:\Users\Matheus\Desktop\TCC Eng. Software\C#\NUnit\calculos\obj\Debug\netstandard2.0\calculos.pdb
