@@ -6,10 +6,23 @@ namespace calculos.tests
     [TestFixture]
     public class CalculadoraTest
     {
+        private Calculadora c;
+
+        [SetUp]
+        public void SetUp()
+        {
+            c = new Calculadora();
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            c = null;
+        }
+
         [Test]
         public void Soma_DeveRetornarOValorCorreto()
         {
-            Calculadora c = new Calculadora();
             var resultado = c.Soma(10, 20);
             Assert.That(30, Is.EqualTo(resultado));
         }
@@ -17,7 +30,6 @@ namespace calculos.tests
         [Test]
         public void RestoDivisao_DeveRetornarOValorCorreto()
         {
-            Calculadora c = new Calculadora();
             var resultado = c.RestoDivisao(10, 3);
             Assert.Multiple(() =>
             {
@@ -31,7 +43,6 @@ namespace calculos.tests
         [TestCase(3)]
         public void RestoDivisao_DeveRetornarZero(int value)
         {
-            Calculadora c = new Calculadora();
             var resultado = c.RestoDivisao(12, value);
             Assert.That(0, Is.EqualTo(resultado.resto));
         }
@@ -39,7 +50,6 @@ namespace calculos.tests
         [Test]
         public void Subtracao_DeveRetornarOValorCorreto()
         {
-            Calculadora c = new Calculadora();
             var resultado = c.Subtracao(20, 10);
             Assert.That(10, Is.EqualTo(resultado));
         }
@@ -47,7 +57,6 @@ namespace calculos.tests
         [Test]
         public void Divisao_DeveRetornarOValorCorreto()
         {
-            Calculadora c = new Calculadora();
             var resultado = c.Divisao(100, 10);
             Assert.That(10, Is.EqualTo(resultado));
         }
@@ -55,7 +64,6 @@ namespace calculos.tests
         [Test]
         public void Multiplicacao_DeveRetornarOValorCorreto()
         {
-            Calculadora c = new Calculadora();
             var resultado = c.Multiplicacao(5, 2);
             Assert.That(10, Is.EqualTo(resultado));
         }
