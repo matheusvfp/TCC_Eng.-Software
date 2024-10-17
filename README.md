@@ -2,7 +2,7 @@
 
 ## Objetivo Geral
 
-Analisar as técnicas e ferramentas de teste de software, explorando sua aplicação nos testes de segurança, usabilidade, funcionais, de integração e de performance. O foco é avaliar a eficiência dessas ferramentas no ciclo de desenvolvimento e entrega contínua de software, proporcionando uma visão abrangente sobre como garantir a qualidade e segurança dos sistemas ao longo do seu desenvolvimento.
+Analisar as técnicas e ferramentas de teste de software, explorando sua aplicação nos testes de segurança, usabilidade, funcionais, de integração e de desempenho. O foco é avaliar a eficiência dessas ferramentas no ciclo de desenvolvimento e entrega contínua de software, proporcionando uma visão abrangente sobre como garantir a qualidade e segurança dos sistemas ao longo do seu desenvolvimento.
 
 ## Objetivos Específicos
 
@@ -42,7 +42,7 @@ Analisar as técnicas e ferramentas de teste de software, explorando sua aplica�
    - UserTesting
 
 7. **Testes de Regressão**  
-   Explorar ferramentas que garantem que novas alterações no código não introduzam novos bugs.
+   Explorar ferramentas que checam se novas alterações no código não introduzem novos bugs.
    - TestNG (Java)
    - pytest (Python)
 
