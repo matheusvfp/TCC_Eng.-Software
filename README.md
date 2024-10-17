@@ -87,3 +87,20 @@ Analisar as técnicas e ferramentas de teste de software, explorando sua aplica�
     ```bash
     python -m unittest discover
     ```
+
+### Testes Funcionais
+
+#### Cypress (Aplicações Web)
+1. **Instalação**: Instalação: Certifique-se de que o Node.js está instalado no seu sistema. Cypress pode ser instalado como uma dependência de desenvolvimento em projetos Node.js. Para instalá-lo, execute o seguinte comando:
+   ```bash
+   npm install cypress --save-dev
+   ```
+2. **Execução de Testes**: Para abrir a interface gráfica do Cypress e executar os testes interativamente:
+    ```bash
+   npx cypress open
+    ```
+
+3. **Execução de Testes**: Para rodar os testes em modo headless (sem interface gráfica), útil para integração contínua (CI):
+    ```bash
+   npx cypress run
+    ```
