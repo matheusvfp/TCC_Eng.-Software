@@ -48,6 +48,48 @@ Analisar as técnicas e ferramentas de teste de software, explorando sua aplica�
 
 ## Configuração do Ambiente
 
+### Testes de Unidade
+
+#### JUnit (Java)
+
+1. **Instalação**: Certifique-se de que o [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) está instalado no seu sistema. JUnit é geralmente integrado com o Maven ou Gradle. Para usar o JUnit com Maven, adicione a seguinte dependência ao seu `pom.xml`:
+
+   ```xml
+   <dependency>
+       <groupId>junit</groupId>
+       <artifactId>junit</artifactId>
+       <version>4.13.2</version>
+       <scope>test</scope>
+   </dependency>
+    ```
+2. **Execução de Testes**: Execute os testes com o comando:
+    ```bash
+    mvn test
+    ```
+#### NUnit (.NET)
+
+1. **Instalação**: Instalação: Certifique-se de ter o .NET SDK instalado. Você pode adicionar NUnit ao seu projeto .NET via NuGet. No terminal, navegue até o diretório do projeto e execute:
+    
+    ```bash
+    dotnet add package NUnit
+    dotnet add package NUnit3TestAdapter
+    ```
+
+2. **Execução de Testes**: Execute os testes com o comando:
+    ```bash
+    dotnet test
+    ```
+
+#### PyUnit (Python)
+1. **Instalação**: Instalação: Certifique-se de que o Python está instalado. PyUnit faz parte da biblioteca padrão do Python, portanto, não é necessário instalar pacotes adicionais.
+
+2. **Execução de Testes**: Execute os testes com o comando:
+    ```bash
+    python -m unittest discover
+    ```
+
+## Configuração do Ambiente
+
 ### Testes de Integração
 
 ### Postman (APIs)
@@ -156,48 +198,6 @@ Abra o arquivo `pom.xml` e adicione a dependência do **RestAssured**.
     </dependencies>
 ````
 
-
-## Configuração do Ambiente
-
-### Testes de Unidade
-
-#### JUnit (Java)
-
-1. **Instalação**: Certifique-se de que o [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) está instalado no seu sistema. JUnit é geralmente integrado com o Maven ou Gradle. Para usar o JUnit com Maven, adicione a seguinte dependência ao seu `pom.xml`:
-
-   ```xml
-   <dependency>
-       <groupId>junit</groupId>
-       <artifactId>junit</artifactId>
-       <version>4.13.2</version>
-       <scope>test</scope>
-   </dependency>
-    ```
-2. **Execução de Testes**: Execute os testes com o comando:
-    ```bash
-    mvn test
-    ```
-#### NUnit (.NET)
-
-1. **Instalação**: Instalação: Certifique-se de ter o .NET SDK instalado. Você pode adicionar NUnit ao seu projeto .NET via NuGet. No terminal, navegue até o diretório do projeto e execute:
-    
-    ```bash
-    dotnet add package NUnit
-    dotnet add package NUnit3TestAdapter
-    ```
-
-2. **Execução de Testes**: Execute os testes com o comando:
-    ```bash
-    dotnet test
-    ```
-
-#### PyUnit (Python)
-1. **Instalação**: Instalação: Certifique-se de que o Python está instalado. PyUnit faz parte da biblioteca padrão do Python, portanto, não é necessário instalar pacotes adicionais.
-
-2. **Execução de Testes**: Execute os testes com o comando:
-    ```bash
-    python -m unittest discover
-    ```
 
 ### Testes Funcionais
 
