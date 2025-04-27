@@ -48,6 +48,117 @@ Analisar as técnicas e ferramentas de teste de software, explorando sua aplica�
 
 ## Configuração do Ambiente
 
+### Testes de Integração
+
+### Postman (APIs)
+
+1. **Instalação do Postman**: Baixe e instale o [Postman](https://www.postman.com/downloads/).
+
+2. **Importação de Coleção**:  
+   Para testar as APIs com o Postman, você pode importar a coleção de testes no formato `.json`:
+   - Clique em **Import** no Postman.
+   - Selecione o arquivo `.json` com a coleção de testes que você subiu para o repositório.
+
+3. **Configuração de Variáveis**:  
+   Se for necessário configurar variáveis, como a URL base ou autenticação, você pode definir variáveis globais ou de ambiente dentro do Postman.  
+   - Crie um **Environment** no Postman e adicione variáveis como `base_url`, `api_key`, etc.
+   - Exemplo: 
+     - `base_url = https://petstore.swagger.io/v2`
+     - `api_key = your_api_key_here`
+
+4. **Execução de Testes**:  
+   Após a importação e configuração, você pode executar os testes de forma interativa ou automatizada com o **Collection Runner** do Postman. 
+   - Clique na coleção de testes e selecione **Run** para executar os testes de forma automatizada.
+
+### SoapUI (serviços SOAP)
+
+1. **Instalação do SoapUI**: Baixe e instale o [SoapUI](https://www.soapui.org/downloads/soapui/).
+
+2. **Importação do Projeto SOAP**:  
+   Para importar o seu projeto SOAP:
+   - No SoapUI, vá para **File > Import Project**.
+   - Selecione o arquivo `.xml` do projeto que você subiu.
+
+3. **Configuração do Endpoint e Parâmetros**:  
+   Para configurar o ambiente no SoapUI, você pode configurar os **Endpoints** e **Parâmetros** de requisição:
+   - Adicione o `base_url` ou endpoint de teste.
+   - Se necessário, configure a autenticação (básica ou via token).
+
+4. **Execução de Testes**:  
+   - Selecione o teste desejado e clique em **Run** para executar as requisições SOAP.
+   - Verifique os resultados e os logs de resposta na parte inferior da tela.
+
+### RestAssured (serviços REST)
+
+
+1. **Baixar o JDK**:
+   - Acesse o site oficial [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html) ou o [OpenJDK](https://openjdk.java.net/install/).
+   
+2. **Instalar o JDK**:
+   - Siga as instruções de instalação conforme o seu sistema operacional (Windows, macOS, Linux).
+   
+3. **Verificar a instalação**:
+   - Abra o terminal ou prompt de comando e execute:
+     ```bash
+     java -version
+     ```
+
+#### 1.2. **Instalar a IDE**
+
+Recomendo o uso do **IntelliJ IDEA** para trabalhar com Java.
+
+1. **Baixar o IntelliJ IDEA**:
+   - Vá para o site oficial [JetBrains IntelliJ IDEA](https://www.jetbrains.com/idea/download/) e baixe a versão **Community**.
+
+2. **Instalar o IntelliJ IDEA**:
+   - Execute o instalador e siga as instruções.
+
+---
+
+#### 2. **Criar um Projeto Maven**
+
+#### 2.1. **Passo 1: Criar Novo Projeto**
+
+1. Abra o **IntelliJ IDEA**.
+2. Selecione **Create New Project**.
+3. Escolha **Maven** e clique em **Next**.
+4. Escolha a versão do Java (por exemplo, **Java 17**).
+5. Defina o **GroupId** (exemplo: `com.exemplo`) e **ArtifactId** (exemplo: `api-test`).
+6. Clique em **Finish**.
+
+### 2.2. **Estrutura do Projeto**
+
+Após a criação, o seu projeto terá a seguinte estrutura:
+```bash
+     api-test/ ├── pom.xml └── src/ └── main/ └── test/ └── java/ └── com/ └── exemplo/ └── ApiTest.java
+   ```
+### 3. **Adicionar Dependências no `pom.xml`**
+
+Abra o arquivo `pom.xml` e adicione a dependência do **RestAssured**.
+
+```xml
+  <dependencies>
+        <!-- Rest Assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.3.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Hamcrest (assertivas como equalTo, hasSize, etc.) -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>2.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+````
+
+
+## Configuração do Ambiente
+
 ### Testes de Unidade
 
 #### JUnit (Java)
