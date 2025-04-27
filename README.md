@@ -215,3 +215,28 @@ Abra o arquivo `pom.xml` e adicione a dependência do **RestAssured**.
     ```bash
    npx cypress run
     ```
+
+#### Selenium (Aplicações Web)
+1. **Instalação**:  
+   Certifique-se de que o **Python 3.x** está instalado no seu sistema. Selenium pode ser instalado via `pip` no ambiente virtual do seu projeto. Para instalá-lo, execute o seguinte comando:
+   ```bash
+   pip install selenium
+   ````
+   #### Pré-requisitos 📋
+- [Python 3.x](https://www.python.org/downloads/) (Eu utilizei a versão `3.11.2` enquanto desenvolvia esse projeto).
+- WebDriver do seu navegador (veja mais abaixo).
+
+#### WebDrivers
+Para executar os testes, você precisa instalar a versão do WebDriver para o seu navegador.
+- [ChromeDriver](https://chromedriver.chromium.org/downloads) para Google Chrome
+- [Geckodriver](https://github.com/mozilla/geckodriver/releases/latest) para Firefox.
+  
+O **ChromeDriver** e o **Geckodriver** devem estar presentes no [system path](https://en.wikipedia.org/wiki/PATH_(variable)).
+
+#### Ambiente Virtual 🌲
+É recomendado a utilização de um ambiente virtual para a instalação das dependências.  
+Dentro da pasta do seu projeto, execute `python -m venv venv` para criar um ambiente virtual:
+
+```bash
+python -m venv venv
+````
