@@ -1,0 +1,107 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" id="4055a2f0-19aa-4a55-bad9-b3c5c698fb03" activeEnvironment="Default" name="REST Project 1" soapui-version="5.8.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="">
+<con:settings/>
+<con:interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RestService" id="2b335b21-7254-4ca0-9201-62b43b3196dd" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://petstore.swagger.io" type="rest">
+<con:settings/>
+<con:definitionCache type="TEXT" rootPart=""/>
+<con:endpoints>
+<con:endpoint>https://petstore.swagger.io</con:endpoint>
+</con:endpoints>
+<con:resource name="Pet" path="" id="0f829fdb-031b-4c81-b13c-076b3d0d3747">
+<con:settings/>
+<con:parameters/>
+<con:method name="Api Pet" id="063f6f23-9bc2-45ab-9f99-fc9a08d7915d" method="DELETE">
+<con:settings/>
+<con:parameters/>
+<con:representation type="FAULT">
+<con:mediaType>application/xml</con:mediaType>
+<con:status>405 404 415</con:status>
+<con:params/>
+<con:element>apiResponse</con:element>
+</con:representation>
+<con:representation type="REQUEST">
+<con:mediaType>application/json</con:mediaType>
+<con:params/>
+</con:representation>
+<con:representation type="RESPONSE">
+<con:mediaType>application/json</con:mediaType>
+<con:status>200</con:status>
+<con:params/>
+<con:element xmlns:pet="https://petstore.swagger.io/v2/pet">pet:Response</con:element>
+</con:representation>
+<con:representation type="FAULT">
+<con:mediaType>application/json</con:mediaType>
+<con:status>404</con:status>
+<con:params/>
+<con:element xmlns:pet="https://petstore.swagger.io/v2/pet">pet:Fault</con:element>
+</con:representation>
+<con:representation type="FAULT">
+<con:mediaType xsi:nil="true"/>
+<con:status>404</con:status>
+<con:params/>
+<con:element>data</con:element>
+</con:representation>
+<con:request name="Delete" id="d69ef289-3ca6-4f01-9b1c-e1390f073eae" mediaType="application/json" postQueryString="false">
+<con:settings>
+<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><xml-fragment/></con:setting>
+</con:settings>
+<con:endpoint>https://petstore.swagger.io/v2/pet/123456</con:endpoint>
+<con:request/>
+<con:originalUri>https://petstore.swagger.io/v2/pet/123456</con:originalUri>
+<con:credentials>
+<con:authType>No Authorization</con:authType>
+</con:credentials>
+<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+<con:jmsPropertyConfig/>
+<con:parameters/>
+</con:request>
+<con:request name="Post" id="911c2cff-6b4a-4b51-8110-b2b7815cbf2e" mediaType="application/json" postQueryString="false">
+<con:settings>
+<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><xml-fragment/></con:setting>
+</con:settings>
+<con:endpoint>https://petstore.swagger.io/v2/pet</con:endpoint>
+<con:request>{ "id": 123456, "name": "Doguito", "status": "available" } </con:request>
+<con:originalUri>https://petstore.swagger.io/v2/pet</con:originalUri>
+<con:credentials>
+<con:authType>No Authorization</con:authType>
+</con:credentials>
+<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+<con:jmsPropertyConfig/>
+<con:parameters/>
+</con:request>
+<con:request name="Get" id="1388efdc-de41-422a-bbdd-bf13b94c0550" mediaType="application/json" postQueryString="false">
+<con:settings>
+<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><xml-fragment/></con:setting>
+</con:settings>
+<con:endpoint>https://petstore.swagger.io/v2/pet/123456</con:endpoint>
+<con:request/>
+<con:originalUri>https://petstore.swagger.io/v2/pet/123456</con:originalUri>
+<con:credentials>
+<con:authType>No Authorization</con:authType>
+</con:credentials>
+<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+<con:jmsPropertyConfig/>
+<con:parameters/>
+</con:request>
+<con:request name="Update" id="6d25e03c-17c3-4ee6-ab44-1c855687c352" mediaType="application/json" postQueryString="false">
+<con:settings>
+<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><xml-fragment/></con:setting>
+</con:settings>
+<con:endpoint>https://petstore.swagger.io/v2/pet </con:endpoint>
+<con:request>{ "id": 123456, "name": "Doguito Atualizado", "status": "sold" } </con:request>
+<con:originalUri>https://petstore.swagger.io/v2/pet</con:originalUri>
+<con:credentials>
+<con:authType>No Authorization</con:authType>
+</con:credentials>
+<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+<con:jmsPropertyConfig/>
+<con:parameters/>
+</con:request>
+</con:method>
+</con:resource>
+</con:interface>
+<con:properties/>
+<con:wssContainer/>
+<con:oAuth2ProfileContainer/>
+<con:oAuth1ProfileContainer/>
+</con:soapui-project>
