@@ -201,7 +201,7 @@ Abra o arquivo `pom.xml` e adicione a dependência do **RestAssured**.
 
 ### Testes Funcionais
 
-#### Cypress (Aplicações Web)
+### Cypress (Aplicações Web)
 1. **Instalação**: Instalação: Certifique-se de que o Node.js está instalado no seu sistema. Cypress pode ser instalado como uma dependência de desenvolvimento em projetos Node.js. Para instalá-lo, execute o seguinte comando:
    ```bash
    npm install cypress --save-dev
@@ -216,13 +216,13 @@ Abra o arquivo `pom.xml` e adicione a dependência do **RestAssured**.
    npx cypress run
     ```
 
-#### Selenium (Aplicações Web)
+### Selenium (Aplicações Web)
 1. **Instalação**:  
    Certifique-se de que o **Python 3.x** está instalado no seu sistema. Selenium pode ser instalado via `pip` no ambiente virtual do seu projeto. Para instalá-lo, execute o seguinte comando:
    ```bash
    pip install selenium
    ````
-   #### Pré-requisitos 📋
+   #### Pré-requisitos 
 - [Python 3.x](https://www.python.org/downloads/) (Eu utilizei a versão `3.11.2` enquanto desenvolvia esse projeto).
 - WebDriver do seu navegador (veja mais abaixo).
 
@@ -233,10 +233,52 @@ Para executar os testes, você precisa instalar a versão do WebDriver para o se
   
 O **ChromeDriver** e o **Geckodriver** devem estar presentes no [system path](https://en.wikipedia.org/wiki/PATH_(variable)).
 
-#### Ambiente Virtual 🌲
+#### Ambiente Virtual 
 É recomendado a utilização de um ambiente virtual para a instalação das dependências.  
 Dentro da pasta do seu projeto, execute `python -m venv venv` para criar um ambiente virtual:
 
 ```bash
 python -m venv venv
-````
+```
+### Appium (Aplicações Mobile com Java)
+
+#### 1. **Instalação**
+
+Appium permite a automação de testes para aplicativos Android e iOS. Para utilizá-lo com Java, os seguintes pré-requisitos são necessários:
+
+##### Pré-requisitos:
+- **Java JDK** (https://www.oracle.com/java/technologies/javase-downloads.html)  
+- **Node.js** (https://nodejs.org/) – Appium é distribuído via npm  
+- **Android Studio** – Inclui o Android SDK e o AVD Manager (emulador)  
+- **Appium Server** – Pode ser instalado via terminal:  
+
+```bash
+  npm install -g appium
+ ```
+Appium Doctor (opcional, recomendado para verificar o ambiente):
+ ```bash
+npm install -g appium-doctor
+appium-doctor
+  ```
+#### 2. **Adicionar Dependências no Projeto (Maven)**
+```xml
+<dependencies>
+    <dependency>
+        <groupId>io.appium</groupId>
+        <artifactId>java-client</artifactId>
+        <version>8.5.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.14.0</version>
+    </dependency>
+</dependencies>
+  ```
+#### 3. **Executar Appium Server**
+ ```bash
+appium
+  ```
+Material para Auxilio na configuração do ambiente 
+👉 [Curso Robot Framework + Appium – Robot Courses](https://robotcourses.com.br/robot-framework-appium-1/)
+
