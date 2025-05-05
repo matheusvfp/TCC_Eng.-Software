@@ -48,7 +48,7 @@ Analisar as técnicas e ferramentas de teste de software, explorando sua aplica�
 
 ## Configuração do Ambiente
 
-### Testes de Unidade
+## Testes de Unidade
 
 #### JUnit (Java)
 
@@ -88,9 +88,7 @@ Analisar as técnicas e ferramentas de teste de software, explorando sua aplica�
     python -m unittest discover
     ```
 
-## Configuração do Ambiente
-
-### Testes de Integração
+## Testes de Integração
 
 ### Postman (APIs)
 
@@ -199,7 +197,7 @@ Abra o arquivo `pom.xml` e adicione a dependência do **RestAssured**.
 ````
 
 
-### Testes Funcionais
+## Testes Funcionais
 
 ### Cypress (Aplicações Web)
 1. **Instalação**: Instalação: Certifique-se de que o Node.js está instalado no seu sistema. Cypress pode ser instalado como uma dependência de desenvolvimento em projetos Node.js. Para instalá-lo, execute o seguinte comando:
